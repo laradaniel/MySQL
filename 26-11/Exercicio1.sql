@@ -44,5 +44,9 @@ select tb_personagem.nome, tb_personagem.ataque, tb_personagem.defesa, tb_classe
 from tb_personagem inner join tb_classe
 on tb_classe.id = tb_personagem.classe_id;
 
-select * from tb_personagem where classe_id = 2;
+select tb_personagem.nome, tb_classe.posicao
+from tb_personagem inner join tb_classe
+on tb_classe.id = tb_personagem.classe_id
+where tb_classe.id = 2
+
 
